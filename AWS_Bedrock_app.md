@@ -33,9 +33,15 @@ We'll build a simple Bedrock agent that can fetch weather information for cities
 
 ### Foundation Model Access
 Enable at least one foundation model in Bedrock:
-- Go to AWS Bedrock Console → Model access
-- Request access to Claude 3 Sonnet or Haiku (recommended for this tutorial)
-- Wait for approval (usually instant for most models)
+- Go to AWS Bedrock Console
+- **Left menu** → **"Discover"** section → **"Model catalog"**
+- Find **"Claude 3 Sonnet"** or **"Claude 3 Haiku"** in the list
+- Click **[Enable access]** button next to the model
+- Agree to the Anthropic EULA
+- Click **"Enable model"**
+- Wait for approval (usually instant - status changes to "Access granted")
+
+**⚠️ Important:** The old "Model access" page (under "Configure and learn") shows "page is retired". Use "Model catalog" instead.
 
 ---
 
