@@ -107,9 +107,51 @@ The service role allows Bedrock to:
 
 ### 2.1 Write Agent Instructions
 
+**Where to Enter Instructions:**
+
+After creating your agent in Step 1, you'll be on the agent configuration page:
+
+1. **Scroll down** to the section titled **"Instructions for the Agent"** 
+2. You'll see a large text box with placeholder text
+3. **Click inside the text box** to start editing
+4. **Delete** any default text
+5. **Paste or type** your custom instructions (see below)
+6. **Optional**: Click **"Show example"** link to see AWS-provided examples
+
+**Location in Console Flow:**
+```
+Create Agent → Agent Details → [Scroll Down] → Instructions for the Agent (text box)
+```
+
+**Console Layout (what you'll see):**
+```
+┌─────────────────────────────────────────────────────┐
+│ Agent details                                        │
+│ ✓ Agent name: WeatherAssistant                      │
+│ ✓ Foundation model: Claude 3 Sonnet                 │
+│ ✓ Service role: AmazonBedrockExecutionRole...       │
+└─────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────┐
+│ Instructions for the Agent - optional    [Show example]│
+│                                                      │
+│ ┌───────────────────────────────────────────────┐  │
+│ │ You are a helpful weather information         │  │
+│ │ assistant. Your role is to:                   │  │
+│ │                                                │  │
+│ │ [Enter your instructions here...]             │  │
+│ │                                                │  │
+│ │                                                │  │
+│ └───────────────────────────────────────────────┘  │
+│                                        0/4000 chars │
+└─────────────────────────────────────────────────────┘
+
+[Additional settings section will appear below...]
+```
+
 Instructions are the "system prompt" that guides your agent's behavior. They define personality, capabilities, and limitations.
 
-**Example Instructions:**
+**Example Instructions to Enter:**
 
 ```text
 You are a helpful weather information assistant. Your role is to:
@@ -135,6 +177,19 @@ You: "In Paris, it's currently 18°C (64°F) with partly cloudy skies and 65% hu
 ```
 
 ### 2.2 Understanding Instructions
+
+**What the Console Shows:**
+- Section header: "Instructions for the Agent - optional"
+- Subtitle: "Provide instructions to help guide the agent's behavior"
+- Large multi-line text box (expandable)
+- Character count display
+- "Show example" link in the top right
+
+**Important Notes:**
+- Instructions are **optional** but highly recommended
+- You can enter up to **4000 characters**
+- Instructions can be updated anytime (remember to "Prepare" agent after changes)
+- More specific instructions = more predictable agent behavior
 
 **Key Components:**
 
