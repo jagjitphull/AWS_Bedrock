@@ -105,7 +105,7 @@ AI: "Let me help with your [CREDIT_CARD]..."  [PII PROTECTED]
 ### Step 1: Clone this Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/bedrock-guardrails-lab.git
+git clone https://github.com/jagjitphull/bedrock-guardrails-lab.git
 cd bedrock-guardrails-lab
 ```
 
